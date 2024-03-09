@@ -2,46 +2,59 @@
 
 void vsefiguri::setCircleFigura()
 {
-	int x, y, size, spin;
 	cout << "Your figure is a circle." << endl;
 	cout << "Moving along the axis x: ";
-	cin >> x;
+	cin >> circle.gox;
 	cout << "Moving along the axis y: ";
-	cin >> y;
+	cin >> circle.goy;
 	cout << "Change the size to: ";
-	cin >> size;
+	cin >> circle.size;
 	cout << "How many degrees should the figure be rotated ? ";
-	cin >> spin;
-	cout << "The figure is a circle. Moved to " << x << " on the x-axis and on " << y << " on the y-axis";
-	cout << "You have changed the size of the shape to " << size << " and turned the figure to " <<spin << " degrees";
+	cin >> circle.spin;
+	/*cout << "The figure is a circle. Moved to " << circle.gox << " on the x-axis and on " << circle.goy << " on the y-axis.";
+	cout << "You have changed the size of the shape to " << circle.size << " and turned the figure to " << circle.spin << " degrees.";*/
 }
+void vsefiguri::coutista(const Figura& vivod)
+{
+	cout << "The figure is a circle. Moved to " << circle.gox << " on the x-axis and on " << circle.goy << " on the y-axis.";
+	cout << "You have changed the size of the shape to " << circle.size << " and turned the figure to " << circle.spin << " degrees.";
+}
+
 void vsefiguri::setBoxFigura()
 {
-	int x, y, size, spin;
 	cout << "Your figure is a box." << endl;
 	cout << "Moving along the axis x:";
-	cin >> x;
+	cin >> box.gox;
 	cout << "Moving along the axis y:";
-	cin >> y;
+	cin >> box.goy;
 	cout << "Change the size to: ";
-	cin >> size;
+	cin >> box.size;
 	cout << "How many degrees should the figure be rotated ? ";
-	cin >> spin;
-	cout << "The figure is a box. Moved to " << x << " on the x-axis and on " << y << " on the y-axis";
-	cout << "You have changed the size of the shape to " << size << " and turned the figure to " << spin << " degrees";
+	cin >> box.spin;
+	/*cout << "The figure is a box. Moved to " << box.gox << " on the x-axis and on " << box.goy << " on the y-axis.";
+	cout << "You have changed the size of the shape to " << box.size << " and turned the figure to " << box.spin << " degrees.";*/
+}
+void vsefiguri::coutistb(const Figura& vivod)
+{
+	cout << "The figure is a box. Moved to " << box.gox << " on the x-axis and on " << box.goy << " on the y-axis.";
+	cout << "You have changed the size of the shape to " << box.size << " and turned the figure to " << box.spin << " degrees.";
 }
 void vsefiguri::setSquareFigura()
 {
-	int x, y, size, spin;
 	cout << "Your figure is a square." << endl;
 	cout << "Moving along the axis x:";
-	cin >> x;
+	cin >> square.gox;
 	cout << "Moving along the axis y:";
-	cin >> y;
+	cin >> square.goy;
 	cout << "Change the size to: ";
-	cin >> size;
+	cin >> square.size;
 	cout << "How many degrees should the figure be rotated ? ";
-	cin >> spin;
-	cout << "The figure is a square. Moved to " << x << " on the x-axis and on " << y << " on the y-axis";
-	cout << "You have changed the size of the shape to " << size << " and turned the figure to " << spin << " degrees";
+	cin >> square.spin;
+	/*cout << "The figure is a square. Moved to " << square.gox << " on the x-axis and on " << square.goy << " on the y-axis.";
+	cout << "You have changed the size of the shape to " << square.size << " and turned the figure to " << square.spin << " degrees.";*/
+}
+void vsefiguri::coutistc(const Figura& vivod)
+{
+	cout << "The figure is a square. Moved to " << square.gox << " on the x-axis and on " << square.goy << " on the y-axis.";
+	cout << "You have changed the size of the shape to " << square.size << " and turned the figure to " << square.spin << " degrees.";
 }
