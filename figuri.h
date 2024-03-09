@@ -14,6 +14,8 @@ struct Figura
 	double goy=0;
 	double size=100;
 	double spin=0;
+	double x = 0;
+	double y = 0;
 };
 
 class vsefiguri
